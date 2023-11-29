@@ -16,7 +16,11 @@ is required to decrypt errors.
 [154frame.yml](154frame.yml) genearates the following figure, which is an
 approximation of the IEEE 802.15.4 frame format:
 
-![IEEE 802.15.4 frame](IEEE802154.svg)
+![IEEE 802.15.4 frame](IEEE802154.png)
+
+The markdown renderer here seems to be cutting the right side of the drawing, so
+the above is a png screenshot. For the original SVG, please [use github's "raw"
+mode.](https://raw.githubusercontent.com/andrasbiro/framedraw/main/IEEE802154.svg)
 
 ## YAML format
 
