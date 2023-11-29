@@ -1,0 +1,67 @@
+global:
+  name: IEEE802154
+  unitsize: 25
+  height: 30
+  fontsize: 10
+  fontfamily: Arial
+  topspace: 7
+  bottomspace: 7
+  leftspace: 5
+  withsize: True
+  sizeunit: " B"
+  subframespacing: 80
+frame:
+  - name: Preamble
+    size: 4
+  - name: SFD
+    size: 1
+  - name: PHR
+    size: 1
+  - name: FCF
+    size: 1/2
+    drawsize: 2
+  - name: SEQ
+    size: 0/1
+    drawsize: 2
+  - name: DPAN
+    size: 0/2
+    drawsize: 2
+  - name: DST
+    size: 0/2/8
+    drawsize: 2
+  - name: SPAN
+    size: 0/2
+    drawsize: 2
+  - name: SRC
+    size: 0/2/8
+    drawsize: 2
+  - name: Aux. security h.
+    size: variable
+    sizeunit: ""
+    drawsize: 4
+    subframerow: 1
+    subframe:
+      - name: CTRL
+        size: 1
+      - name: counter
+        size: 0/4
+        drawsize: 4
+      - name: key ID
+        size: 0/1/5/9
+        drawsize: 4
+  - name: IE
+    size: variable
+    sizeunit: ""
+    drawsize: 4
+  - name: payload
+    size: variable
+    sizeunit: ""
+    drawsize: 10
+    cut: 7
+  - name: FCS
+    size: 2/4
+    drawsize: 2
+        
+        
+        
+        

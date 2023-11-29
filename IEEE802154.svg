@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%">
+  <defs/>
+  <g stroke="black">
+    <rect fill="white" height="30" width="100" x="5" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="55.0" y="22.0">Preamble</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="55.0" y="54">4 B</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="25" x="105" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="117.5" y="22.0">SFD</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="117.5" y="54">1 B</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="25" x="130" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="142.5" y="22.0">PHR</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="142.5" y="54">1 B</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="50" x="155" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="180.0" y="22.0">FCF</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="180.0" y="54">1/2 B</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="50" x="205" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="230.0" y="22.0">SEQ</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="230.0" y="54">0/1 B</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="50" x="255" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="280.0" y="22.0">DPAN</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="280.0" y="54">0/2 B</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="50" x="305" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="330.0" y="22.0">DST</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="330.0" y="54">0/2/8 B</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="50" x="355" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="380.0" y="22.0">SPAN</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="380.0" y="54">0/2 B</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="50" x="405" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="430.0" y="22.0">SRC</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="430.0" y="54">0/2/8 B</text>
+  </g>
+  <line stroke="black" stroke-dasharray="2 2" x1="455" x2="392.5" y1="37" y2="80"/>
+  <g stroke="black">
+    <rect fill="white" height="30" width="25.0" x="392.5" y="80"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="405.0" y="95.0">CTRL</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="405.0" y="127">1 B</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="100.0" x="417.5" y="80"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="467.5" y="95.0">counter</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="467.5" y="127">0/4 B</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="100.0" x="517.5" y="80"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="567.5" y="95.0">key ID</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="567.5" y="127">0/1/5/9 B</text>
+  </g>
+  <line stroke="black" stroke-dasharray="2 2" x1="555" x2="617.5" y1="37" y2="80"/>
+  <g stroke="black">
+    <rect fill="white" height="30" width="100" x="455" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="505.0" y="22.0">Aux. security h.</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="505.0" y="54">variable</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="100" x="555" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="605.0" y="22.0">IE</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="605.0" y="54">variable</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="250" x="655" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="780.0" y="22.0">payload</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="780.0" y="54">variable</text>
+    <line stroke="white" x1="830" x2="842.5" y1="7" y2="7"/>
+    <line stroke="white" x1="830" x2="842.5" y1="37" y2="37"/>
+    <polyline fill="white" points="830,0 826,24.0 834,20.0 830,44"/>
+    <polyline fill="white" points="842.5,0 838.5,24.0 846.5,20.0 842.5,44"/>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="50" x="905" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="930.0" y="22.0">FCS</text>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="930.0" y="54">2/4 B</text>
+  </g>
+</svg>
