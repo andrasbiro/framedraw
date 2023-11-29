@@ -24,7 +24,11 @@ mode.](https://raw.githubusercontent.com/andrasbiro/framedraw/main/IEEE802154.sv
 
 ## YAML format
 
-All the tags in the yaml are lowercase. Each yml should start with a `global`
+The yaml file is fairly easy to understand, at least the parts that you might
+need. The next part is just a reference of all keywords, but in general, it's
+probably simpler to grab the [example](154frame.yml) and modify it.
+
+All the keywords in the yaml are lowercase. Each yml should start with a `global`
 formatting field followed by the frame description under `frame`
 
 ### Global fields
