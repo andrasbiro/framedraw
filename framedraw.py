@@ -8,7 +8,7 @@ except ImportError:
     from yaml import Loader
 
 
-def generateField(dwg, field, xstart, ystart, globalconfig):
+def generateField(dwg, field, bitoffset, xstart, ystart, globalconfig):
     unitSize = globalconfig['unitsize']
     height = globalconfig['height']
     fontSize = globalconfig['fontsize']
@@ -35,6 +35,22 @@ def generateField(dwg, field, xstart, ystart, globalconfig):
         txt['font-family'] = globalconfig['fontfamily']
         frameg.add(txt)
     
+    if globalconfig['withbits']:
+        #in bits mode, we create a two line table, the first line containing bit numbers, with the first cell "Bit: N"
+        frameg.add(dwg.rect((xstart, ystart-height), (end-xstart, height), fill='white'))
+        if bitoffset == 0:
+            bitrange = "Bits: "
+        else:
+            bitrange =""
+        if field['size'] == 1:
+            bitrange += str(bitoffset)
+        else:
+            bitrange += str(bitoffset) + "-" + str(bitoffset+field['size']-1)
+        txt=dwg.text(bitrange, (xstart+(end-xstart)/2,ystart-height/2), style='text-anchor:middle;dominant-baseline:middle')
+        txt['font-size'] = fontSize
+        txt['font-family'] = globalconfig['fontfamily']
+        frameg.add(txt)
+    
     if 'cut' in field:
         at = xstart + field['cut']*unitSize
         width = 4
@@ -57,13 +73,19 @@ def generateField(dwg, field, xstart, ystart, globalconfig):
                 subframesize = subframesize + subf['size']
         subframex=xstart+size*unitSize/2 #middle of current frame
         subframex=subframex-subframesize*unitSize/2 #mid-adjust with subframe size
-        subframey=globalconfig['subframespacing']*field['subframerow']
+        if globalconfig['withbits']:
+            subframey=globalconfig['subframespacing']*field['subframerow']
+        else:
+            subframey=globalconfig['subframespacing']*field['subframerow']
         ln = dwg.line((xstart, ystart+height),(subframex, subframey), stroke = 'black')
         ln.dasharray([2,2])
         dwg.add(ln)
 
+        subbitoffset = 0
         for subf in field['subframe']:
-            subframex = generateField(dwg, subf, subframex, subframey, globalconfig)
+            subframex = generateField(dwg, subf, subbitoffset, subframex, subframey, globalconfig)
+            if globalconfig['withbits']:
+                subbitoffset = subbitoffset + subf['size']
 
         ln = dwg.line((xstart+size*unitSize, ystart+height),(subframex, subframey), stroke = 'black')
         ln.dasharray([2,2])
@@ -80,10 +102,15 @@ def draw(globalconfig, frameconfig):
     dwg = svgwrite.Drawing(globalconfig['name']+'.svg', profile='full')
 
     top = globalconfig['topspace']
+    if globalconfig['withbits']:
+        top = top + globalconfig['height']
+    bitoffset = 0
     
     xstart = globalconfig['leftspace']
     for field in frameconfig:
-        xstart = generateField(dwg, field, xstart, top, globalconfig)
+        xstart = generateField(dwg, field, bitoffset, xstart, top, globalconfig)
+        if globalconfig['withbits']:
+            bitoffset = bitoffset + field['size']
     dwg.save(pretty=True)
 
 def main():

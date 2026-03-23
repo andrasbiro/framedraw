@@ -1,0 +1,36 @@
+global:
+  name: OFDM_PHR
+  unitsize: 25
+  height: 30
+  fontsize: 10
+  fontfamily: Arial
+  topspace: 7
+  bottomspace: 7
+  leftspace: 5
+  withsize: False
+  withbits: True
+frame:
+  - name: Rate
+    size: 5
+    drawsize: 4
+  - name: Reserved
+    size: 1
+    drawsize: 3
+  - name: Length
+    size: 11
+    drawsize: 4
+  - name: Reserved
+    size: 2
+    drawsize: 3
+  - name: Scrambler
+    size: 2
+    drawsize: 4
+  - name: Reserved
+    size: 1
+    drawsize: 3
+  - name: HCS
+    size: 8
+    drawsize: 4
+  - name: Tail
+    size: 6
+    drawsize: 4

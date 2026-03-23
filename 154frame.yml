@@ -8,6 +8,7 @@ global:
   bottomspace: 7
   leftspace: 5
   withsize: True
+  withbits: False
   sizeunit: " B"
   subframespacing: 80
 frame:

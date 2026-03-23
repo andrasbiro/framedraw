@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%">
+  <defs/>
+  <g stroke="black">
+    <rect fill="white" height="30" width="100" x="5" y="37"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="55.0" y="52.0">Rate</text>
+    <rect fill="white" height="30" width="100" x="5" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="55.0" y="22.0">Bits: 0-4</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="75" x="105" y="37"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="142.5" y="52.0">Reserved</text>
+    <rect fill="white" height="30" width="75" x="105" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="142.5" y="22.0">5</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="100" x="180" y="37"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="230.0" y="52.0">Length</text>
+    <rect fill="white" height="30" width="100" x="180" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="230.0" y="22.0">6-16</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="75" x="280" y="37"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="317.5" y="52.0">Reserved</text>
+    <rect fill="white" height="30" width="75" x="280" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="317.5" y="22.0">17-18</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="100" x="355" y="37"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="405.0" y="52.0">Scrambler</text>
+    <rect fill="white" height="30" width="100" x="355" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="405.0" y="22.0">19-20</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="75" x="455" y="37"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="492.5" y="52.0">Reserved</text>
+    <rect fill="white" height="30" width="75" x="455" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="492.5" y="22.0">21</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="100" x="530" y="37"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="580.0" y="52.0">HCS</text>
+    <rect fill="white" height="30" width="100" x="530" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="580.0" y="22.0">22-29</text>
+  </g>
+  <g stroke="black">
+    <rect fill="white" height="30" width="100" x="630" y="37"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="680.0" y="52.0">Tail</text>
+    <rect fill="white" height="30" width="100" x="630" y="7"/>
+    <text font-family="Arial" font-size="10" style="text-anchor:middle;dominant-baseline:middle" x="680.0" y="22.0">30-35</text>
+  </g>
+</svg>

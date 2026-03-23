@@ -22,6 +22,16 @@ The markdown renderer here seems to be cutting the right side of the drawing, so
 the above is a png screenshot. For the original SVG, please [use github's "raw"
 mode.](https://raw.githubusercontent.com/andrasbiro/framedraw/main/IEEE802154.svg)
 
+### Bitfields
+
+Drawing bitfields is also possible. E.g. the IEEE 802.15.4 SUN OFDM PHR
+documentation looks like this:
+
+![IEEE 802.15.4 SUN OFDM PHR](OFDM_PHR.png)
+
+Again, the original [SVG in "raw
+mode"](https://raw.githubusercontent.com/andrasbiro/framedraw/main/OFDM_PHR.svg).
+
 ## YAML format
 
 The yaml file is fairly easy to understand, at least the parts that you might
@@ -44,6 +54,10 @@ formatting field followed by the frame description under `frame`
 * `leftspace`: Space left from the frame rectnagle. Recommended: 5
 * `withsize`: Set it to `True` to write the size under the frame (otherwise size
   is only represented with drawing width)
+* `withbits`: If enabled, the frame will be drawn as a dual rectangle, with the
+  upper rectangle documenting bitfields, e.g. 6-10. Usable for creating
+  documentation on bitfields. Note that when `withbits` is true, all `size` must
+  be integer
 * `sizeunit`: Unit to print after the size, with leading spaces. E.g., `" B"`
 * `subfrmaespacing`: disatnace between subframes, including main frame and first
   subframe. Recommended: 80
