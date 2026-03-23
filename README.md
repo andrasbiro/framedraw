@@ -51,7 +51,7 @@ formatting field followed by the frame description under `frame`
 * `fontfamily`: Font family for all fonts. Recommended: 10
 * `topspace`: Space from the top of the canvas. Recommended: 7
 * `bottomspace`: Space under the frame rectangle. Recommended: 7
-* `leftspace`: Space left from the frame rectnagle. Recommended: 5
+* `leftspace`: Space left/right from the frame rectnagle. Recommended: 5
 * `withsize`: Set it to `True` to write the size under the frame (otherwise size
   is only represented with drawing width)
 * `withbits`: If enabled, the frame will be drawn as a dual rectangle, with the
