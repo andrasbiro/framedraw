@@ -16,21 +16,14 @@ is required to decrypt errors.
 [154frame.yml](154frame.yml) genearates the following figure, which is an
 approximation of the IEEE 802.15.4 frame format:
 
-![IEEE 802.15.4 frame](IEEE802154.png)
-
-The markdown renderer here seems to be cutting the right side of the drawing, so
-the above is a png screenshot. For the original SVG, please [use github's "raw"
-mode.](https://raw.githubusercontent.com/andrasbiro/framedraw/main/IEEE802154.svg)
+![IEEE 802.15.4 frame](IEEE802154.svg)
 
 ### Bitfields
 
 Drawing bitfields is also possible. E.g. the IEEE 802.15.4 SUN OFDM PHR
 documentation looks like this:
 
-![IEEE 802.15.4 SUN OFDM PHR](OFDM_PHR.png)
-
-Again, the original [SVG in "raw
-mode"](https://raw.githubusercontent.com/andrasbiro/framedraw/main/OFDM_PHR.svg).
+![IEEE 802.15.4 SUN OFDM PHR](OFDM_PHR.svg)
 
 ## YAML format
 
