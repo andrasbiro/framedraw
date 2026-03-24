@@ -54,6 +54,8 @@ formatting field followed by the frame description under `frame`
 * `sizeunit`: Unit to print after the size, with leading spaces. E.g., `" B"`
 * `subfrmaespacing`: disatnace between subframes, including main frame and first
   subframe. Recommended: 80
+* `scale`: Optional parameter to scale up/down the final drawing. When ommitted,
+  scale 1 is assumed.
 
 ### Frame fields
 

@@ -126,6 +126,9 @@ def draw(globalconfig, frameconfig):
     dwg.viewbox(0, 0, xstart + globalconfig['leftspace'], maxheight + globalconfig['topspace'] + globalconfig['bottomspace'])
     dwg['width'] = xstart + globalconfig['leftspace'] #assume right space is the same as left space
     dwg['height'] = maxheight + globalconfig['topspace'] + globalconfig['bottomspace']
+
+    dwg['width'] = dwg['width']*globalconfig.get('scale', 1)
+    dwg['height'] = dwg['height']*globalconfig.get('scale', 1)
     
     dwg.save(pretty=True)
 
